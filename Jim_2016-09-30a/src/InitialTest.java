@@ -56,14 +56,14 @@ public class InitialTest {
 		frame.getContentPane().add(textField);
 		textField.setColumns(10);
 		//String var1 = textField.getText();
-		
+		Sum=5; //works Here
 		JButton btnOkay = new JButton("Okay");
 		btnOkay.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				move = textField.getText();
 				txtpnF.setText(move); 
-				final int Sum=5;
-				System.out.println("1 -- Test: "+move+" another test: "+textField.getText());
+				Sum=5;
+				System.out.println("2 -- Test: "+move+" another test: "+textField.getText());
 				ary1[0] = move;
 			}
 		});
@@ -76,6 +76,6 @@ public class InitialTest {
 		frame.getContentPane().add(txtpnF);
 		
 		//String simplify = textField.getText();
-		System.out.println("2 -- Test: "+move+" another test: "+textField.getText()+" test "+ary1[0]+" test "+Sum);
+		System.out.println("1 -- Test: "+move+" Test: "+textField.getText()+" Test: "+ary1[0]+" Test: "+Sum);
 	}
 }
